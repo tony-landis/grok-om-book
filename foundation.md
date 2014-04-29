@@ -18,7 +18,7 @@ https://github.com/tony-landis/om-foundation
 
 Update the `:dependencies` key in `project.clj` to:
 
-```clojurescript
+```
 :dependencies [[org.clojure/clojure "1.5.1"]
                [org.clojure/clojurescript "0.0-2173"]
                [org.clojure/core.async "0.1.267.0-0d7780-alpha"]
@@ -42,19 +42,18 @@ Lets fix that, add the foundation css include, and add a new root dom node that 
 Open `index.html` and change it to:
 
 ```html
-<html>
   <head>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/normalize.min.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/foundation.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/normalize.min.css">
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/foundation/5.2.2/css/foundation.min.css">
   </head>
-    <body>
-        <div id="app"></div>
-        <div id="debug"></div>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react.js"></script>
-        <script src="out/goog/base.js" type="text/javascript"></script>
-        <script src="grok_om.js" type="text/javascript"></script>
-        <script type="text/javascript">goog.require("grok_om.core");</script>
-    </body>
+  <body>
+    <div id="app"></div>
+    <div id="debug"></div>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/react/0.10.0/react.js" type="text/javascript"></script>
+    <script src="out/goog/base.js" type="text/javascript"></script>
+    <script src="grok_om.js" type="text/javascript"></script>
+    <script type="text/javascript">goog.require("grok_om.core");</script>
+  </body>
 </html>
 ```
 
